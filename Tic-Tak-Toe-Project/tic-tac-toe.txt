@@ -1,0 +1,40 @@
+Developed by Nandan Kumar T 
+Date:19/10/2025
+description:tic-tac-toe game
+
+
+🧩 program summary – tic-tac-toe game
+this c program implements a two-player tic-tac-toe game played via the terminal. it allows two users to alternate turns marking ‘o’ and ‘x’ on a 3×3 grid until one wins or the game ends in a draw.
+
+⚙️ key components
+
+global array
+char box[] = {'1','2','3','4','5','6','7','8','9'};
+represents the 3×3 grid positions.
+
+functions
+printbox() – displays the current tic-tac-toe board.
+markbox() – handles player input, validates moves, updates the board, and checks for a winner.
+check_win() – checks all possible winning combinations and determines if there’s a winner or draw.
+reset() – resets the board to its initial state for a new game.
+
+main menu
+option 1: let’s play → starts the game.
+option 2: exit → quits the program.
+any other input prints an error message.
+
+🎮 game flow
+the program displays a menu.
+players enter their names.
+each player selects a cell number (1–9) to mark their symbol.
+the game board updates after each turn.
+the program checks for:
+a winning line (three same marks in a row, column, or diagonal).
+a draw (all cells filled with no winner).
+when the game ends, it displays the winner or draw message and resets the board.
+
+🏁 features
+input validation for range (1–9).
+prevents duplicate moves.
+automatically resets for replay.
+clear and structured board display using system("clear").
